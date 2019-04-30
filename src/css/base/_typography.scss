@@ -1,0 +1,84 @@
+.azn {
+	font-family: $aznb;
+}
+
+.game__hr{
+    color: $color_white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    @include respondmax(lg){
+        font-size: 1.3rem;
+    }
+    @include respondmax(sm){
+        font-size: 1.5rem;
+    }
+
+    &::before,
+    &::after{
+        content: "";
+        display: inline-block;
+        border: 1px solid $color_white;
+        vertical-align: middle;
+    }
+
+    &::before{
+        width: 6%;
+        margin-right: 1rem;
+    }
+    &::after{
+        width: 74%;
+        margin-left: 1rem;
+        @include respondmax(xl){
+            width: 70%;
+        }
+        @include respondmax(lg){
+            width: 65%;
+        }
+        @include respondmax(sm){
+            width: 41%;
+        }
+    }
+}
+
+.gamer__hr{
+    &::after{
+        width: 30%;
+        @include respondmax(xl){
+            width: 17%;
+        }
+        @include respondmax(lg){
+            width: 4%;
+        }
+        @include respondmax(sm){
+            width: 45%;
+        }
+    }
+}
+
+.game__vip--hr{
+    &::after{
+        width: 83%;
+        @include respondmax(xl){
+            width: 80%;
+        }
+        @include respondmax(sm){
+            width: 56%;
+        }
+    }
+}
+
+.game__latest--hr{
+    &::after{
+        width: 73%;
+        @include respondmax(xl){
+            width: 70%;
+        }
+        @include respondmax(lg){
+            width: 67%;
+        }
+        @include respondmax(sm){
+            width: 21%;
+        }
+    }
+}

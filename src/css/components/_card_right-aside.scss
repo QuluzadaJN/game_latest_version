@@ -1,0 +1,88 @@
+.gamers{
+    margin-top: 3rem;
+}
+.gamer{
+    padding: 1rem;
+    background-color: $color_dark_grey;
+    color: $color_white;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 .7rem $color_black;
+    margin-bottom: 1rem;
+
+    &_number{
+        width: 10%;
+    }
+
+    &_info{
+        width: 60%;
+        padding-left: .7rem;
+    }
+    &_degree{
+        font-size: 2.4rem;
+
+        @include respondmax(xl){
+            font-size: 2rem;
+        }
+
+        @include respondmax(lg){
+            font-size: 1.8rem;
+        }
+        @include respondmax(sm){
+            font-size: 2.8rem;
+        }
+    }
+
+    &_image{
+        position: relative;
+        width: 20%;
+
+        @include respondmax(xl){
+            width: 17%;
+        }
+    }
+
+    &-profile{
+        width: 3.7rem!important;
+
+        @include respondmax(xl){
+            width: 3.2rem!important;
+        }
+        @include respondmax(sm){
+            width: 5rem!important;
+        }
+    }
+
+    &-status{
+        position: absolute;
+        width: 40%!important;
+        bottom: -.5rem;
+        right: -.5rem;
+    }
+
+    &_name{
+        font-size: 1.4rem;
+        margin-bottom: 0;
+
+        @include respondmax(xl){
+            font-size: 1.2rem;
+        }
+        @include respondmax(lg){
+            font-size: 1rem;
+        }
+        @include respondmax(sm){
+            font-size: 2rem;
+        }
+    }
+
+    &_score{
+        color: $color_light_grey;
+        font-size: 1.2rem;
+
+        @include respondmax(sm){
+            font-size: 2rem;
+        }
+    }
+}

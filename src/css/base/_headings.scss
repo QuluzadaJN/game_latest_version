@@ -1,0 +1,46 @@
+.heading-tertiary{
+    margin-bottom: 0;
+    &__main{
+        font-weight: 400;
+        display: block;
+        font-size: 2.4rem;
+        position: relative;
+        margin-bottom: -.5rem;
+
+        @include respondmax(sm){
+            font-size: 3.5rem;
+        }
+    }
+    &__sub{
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        @include respondmax(sm){
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.heading-quaternary{
+    font-size: 1.8rem;
+
+    @include respondmax(sm){
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .heading-tertiary{
+        &__main{
+            font-size: 1.6rem;
+        }
+        &__sub{
+            font-size: 1rem;
+        }
+    }
+    
+    .heading-quaternary{
+        font-size: 1.6rem;
+    }
+}

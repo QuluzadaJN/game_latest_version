@@ -1,0 +1,10 @@
+.game{
+    background-color: $color_black_bg;
+    &__container{
+        padding: 3rem 0;
+    }
+
+    &__main_left, &__vip, &__latest{
+        margin-top: 2rem;
+    }
+}

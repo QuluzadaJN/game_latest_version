@@ -1,0 +1,171 @@
+.game-card{
+    position: relative;
+    border-radius: 2.9rem;
+    padding-top: 12rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 0 1.5rem $color_black;
+    border: none;
+    width: 100%;
+    margin-bottom: 2.5rem;
+
+    @include respondmax(lg){
+        padding-top: 9rem;
+    }
+    @include respondmax(sm){
+        padding-top: 18rem;
+    }
+
+    &--1{
+        background-image: url("../../img/game1.png");        
+    }
+
+    &--2{
+        background-image: url("../../img/game2.png");
+    }
+
+    &--3{
+        background-image: url("../../img/game3.png");
+    }
+
+    &--4{
+        background-image: url("../../img/game4.png");
+    }
+
+    &--5{
+        background-image: url("../../img/game5.png");
+    }
+
+    &--6{
+        background-image: url("../../img/game6.png");
+    }
+    
+    &__premium{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 7rem;
+        height: 7rem;
+        border-top-right-radius: 2.9rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 0);
+        text-align: center;
+        padding-top: 1rem;
+        padding-left: 2.5rem;
+        img{
+            width: 60%!important;
+        }
+        &-red{
+            background-color: $color_red;
+        }
+        &-green{
+            background-color: $color_green;
+        }
+
+        @include respondmax(lg){
+            width: 5rem;
+            height: 5rem;
+            padding-left: 2rem;
+        }
+        @include respondmax(sm){
+            width: 8rem;
+            height: 8rem;
+            padding-left: 2rem;
+        }
+    }
+
+    &__context{
+        border-bottom-left-radius: 2.4rem;
+        border-bottom-right-radius: 2.4rem;
+        padding: 1rem 3rem;
+        color: $color_white;
+        text-align: center;
+        background-color: $color_dark_grey;
+
+        @include respondmax(lg){
+            padding: 1rem 2rem;
+        }
+        @include respondmax(sm){
+            padding: 1rem 4rem;
+        }
+    }
+
+    &__layer{
+        width: 100%;
+        display: block;
+        padding-top: 5rem;
+        background: linear-gradient(to bottom,
+                    rgba($color_dark_grey,0) 0%,
+                    rgba($color_dark_grey,1) 95%);
+
+        @include respondmax(xl){
+            padding-top: 2rem;
+        }
+    }
+
+    &__name{
+        width: 55%;
+
+        @include respondmax(sm){
+            width: 48%;
+        }
+    }
+    &__price{
+        width: 42%;
+    }
+
+    &__img-name{
+        width: 100%;
+        height: auto;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__date{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+
+        @include respondmax(lg){
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+        @include respondmax(sm){
+            margin-top: 1.8rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__money{
+        vertical-align: top;
+    }
+}
+
+// @media only screen and (max-width: 360px){
+//     .card{
+//         padding-top: 160px;
+//     }
+// }
+// @media only screen and (min-width: 360px) and (max-width: 450px){
+//     .card{
+//         padding-top: 210px;
+//     }
+// }
+
+// @media only screen and (min-width: 600px) and (max-width: 1000px){
+//     .card{
+//         padding-top: 60px;
+//         &__date{
+//             margin-top: 10px;
+//             font-size: 9px;
+//         }
+//     }
+// }
+
+// @media only screen and (min-width: 800px) and (max-width: 1100px){
+//     .card{
+//         padding-top: 100px;
+//     }
+// }

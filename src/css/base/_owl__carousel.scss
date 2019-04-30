@@ -1,0 +1,46 @@
+.owl-nav{
+    display: none!important;
+}
+.owl-dot{
+    margin-top: -1rem!important;
+   span{
+        background: $color_dot!important;
+        width: 2rem!important;
+        height: 2rem!important;
+    }
+    &.active{
+        span{
+            background: $color_dot-active!important;
+        }
+    }
+}
+.owl-item{
+    .game-card{
+        margin: 0 1.5rem 2.5rem!important;
+
+        @include respondmax(lg){
+            padding-top: 12rem;
+        }
+        @include respondmax(sm){
+            padding-top: 18rem;
+        }
+
+        &__premium{
+            padding-left: 3.2rem!important;
+            img{
+                width: 70%!important;
+            }
+
+            @include respondmax(lg){
+                width: 7rem;
+                height: 7rem;
+                padding-left: 3.2rem;
+            }
+            @include respondmax(sm){
+                width: 9rem;
+                height: 9rem;
+                padding-left: 3.5rem!important;
+            }
+        }
+    }
+}
